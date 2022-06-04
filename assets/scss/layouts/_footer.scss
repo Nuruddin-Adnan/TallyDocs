@@ -1,0 +1,104 @@
+.footer{
+   background: #f8f8f8;
+   padding: 70px 0; 
+
+   .top-footer-wrapper{
+      padding-bottom: 70px;
+      @media screen and (max-width: 767px){
+         padding-bottom: 30px;
+      }
+      h6{
+         @include font-style(18px, 600, #333333);
+         padding-bottom: 25px;
+      }
+
+      .address{
+         p{
+            @include font-style(15px, 400, #696969);
+            line-height: 26px;
+            
+         }
+      }
+
+      a{
+         @include font-style(15px, 400, #696969);
+         display: inline-block;
+         margin-bottom: 12px;
+         position: relative;
+         transition: all 0.4s ease-in-out;
+
+         &::after{
+            content:"";
+            position: absolute;
+            height: 1px;
+            width: 0%;
+            background:  $color-secondary;
+            top: 100%;
+            left: 0;
+            transition: all 0.4s ease-in-out;
+         }
+         
+         &:hover{
+            color: $color-secondary;
+   
+            &::after{
+               width: 100%;
+            }
+         }
+      }
+
+      .button-buy{
+         &::after{
+           display: none;
+         }
+      }
+
+      .reach-us{
+         .dial{
+            @include font-style(15px, 700, #333333);
+
+         }
+      }
+
+      .button-buy{
+         color: #fff;
+      }
+   }
+
+   .footer-bottom{
+      p{
+         @include font-style(15px, 400, #696969);
+      }
+
+      .foot-social-links{
+         display: flex;
+
+         li{
+            &:not(:last-child){
+               margin-right: 20px;
+            }
+
+            a{
+               i{
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: #696969;
+                  height: 40px;
+                  width: 40px;
+                  font-size: 18px;
+                  border-radius: 50%;
+                  border: 1px solid #696969;
+                  transition: all 0.4s ease-in-out;
+                  
+                  &:hover{
+                     background: $color-blue-light;
+                     color: #fff;
+                     border: 1px solid $color-blue-light;
+                  }
+               }
+            }
+         }
+      }
+   }
+}

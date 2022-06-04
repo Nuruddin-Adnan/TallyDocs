@@ -1,0 +1,22 @@
+// width
+@media(min-width: 768px){
+   .w-md-50 {
+      width: 50%;
+   }
+   .w-md-75 {
+      width: 75%;
+   }
+   .w-md-80 {
+      width: 80%;
+   }
+}
+
+.section-header{
+
+   font-family: 'Lora';
+   @include font-style(60px, 600, $color-primary); 
+   
+   @media screen and (max-width: 991px) {
+      @include font-style(40px, 700, $color-primary);         
+   }
+}

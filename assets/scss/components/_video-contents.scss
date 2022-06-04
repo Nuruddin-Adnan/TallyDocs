@@ -1,0 +1,26 @@
+.video-content{
+   padding: 70px 0;
+
+   @media screen and (max-width: 767px){
+      padding: 40px 0;
+   }
+
+   // .main-content{
+   //    display: flex;
+   //    align-items: center;
+   //    justify-content: center;
+      
+   //    .playfield{
+   //       width: 80%;
+   //    }
+   // }
+
+   .thumbnil{
+      position: relative;
+      margin-top: -10%;
+      z-index: 999;
+      overflow: hidden;
+    
+
+   }
+}

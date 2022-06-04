@@ -1,0 +1,33 @@
+.button-orange{
+   color: #fff;
+   background: $color-secondary;
+   font-weight: 500;
+   padding: 0.5rem 2.0rem;
+   border: none;
+   border-radius: 6px;
+
+   &.btn-register{
+      @media screen and (max-width: 425px){
+         padding: 0.2rem 0.5rem;   
+         font-size: 15px;      
+      }
+   }
+}
+
+.button-primary{
+   color: #fff;
+   background: $color-primary;
+   font-weight: 500;
+   padding: 0.5rem 2.0rem;
+   border: none;
+   border-radius: 6px;
+}
+
+.button-tilt{
+   color: #fff;
+   background: $color-blue-light;
+   font-weight: 500;
+   padding: 0.5rem 2.0rem;
+   border: none;
+   border-radius: 6px;
+}
