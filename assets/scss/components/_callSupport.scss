@@ -24,20 +24,24 @@
 
       .call-header{
          font-family: 'Lora';
-         @include font-style(62px, 700, $color-primary); 
+         font-size: 62px;
+         font-weight: 700;
+         color: $color-primary;
          
          @media screen and (max-width: 991px) {
-            @include font-style(40px, 700, $color-primary);         
+            font-size: 40px;        
          }
 
          @media screen and (max-width: 370px) {
-            @include font-style(35px, 700, $color-primary);         
+            font-size: 35px;      
          }
       }
       
       .phone-number{
          font-family: 'Montserrat';
-         @include font-style(62px, 600, $color-secondary); 
+         font-size: 62px;
+         font-weight: 600;
+         color: $color-secondary;
          
          @media screen and (max-width: 991px) and (min-width: 376px) {
             font-size: 40px; 

@@ -52,3 +52,13 @@
     }
   });
 }
+
+// video-player start
+function videoPlay(element){
+  const videoPlayer = document.getElementById('video-player');
+  const url = element.value;
+  videoPlayer.src = url;
+  // videoPlayer.src += "?autoplay=1";
+  videoPlayer.play();
+}
+// video-player end
