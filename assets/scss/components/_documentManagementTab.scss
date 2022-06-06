@@ -7,15 +7,32 @@
    .nav-pills{
       padding-bottom: 25px;
 
-      &::-webkit-scrollbar {
-         display: none;
-         scrollbar-width: none;
-         -ms-overflow-style: none;
-     }
-
       @media (max-width: 991px) {
+         padding-bottom: 15px;
          flex-wrap: nowrap;
          overflow: auto;
+
+         /* width */
+         &::-webkit-scrollbar {
+            height: 3px;
+            border-radius: 10px;
+         }
+         
+         /* Track */
+         &::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+         }
+         
+         /* Handle */
+         &::-webkit-scrollbar-thumb {
+            background: #888; 
+            border-radius: 5px;
+         }
+         
+         /* Handle on hover */
+         &::-webkit-scrollbar-thumb:hover {
+            background: #555; 
+         }
       }
      
 
@@ -39,6 +56,15 @@
             top: 100%;
             left: 0;
             transition: all 0.4s ease-in-out;
+         }
+
+         @media (max-width: 991px) {
+            font-size: 20px;
+            padding-bottom: 0;
+
+            &::after {
+               height: 1px;
+            }
          }
          
          &.active{
